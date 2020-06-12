@@ -183,62 +183,14 @@ TB-01 是一款基于联盛德 W600 的超小体积核心开发板，该开发�
 
 ## **1 概述**
 
+W800 芯片是一款安全 IoT Wi-Fi/蓝牙 双模 SoC 芯片。支持 2.4G IEEE802.11b/g/n Wi-Fi 通讯协议；
+支持 BT/BLE 双模工作模式，支持 BT/BLE4.2 协议。芯片集成 32 位 CPU 处理器，内置 UART、 GPIO、 SPI、
+I2C、 I2S、 7816 等数字接口；支持多种硬件加解密算法，内置 DSP、浮点运算单元与安全引擎，支持代码安
+全权限设置， 内置 2MBFlash 存储器， 支持固件加密存储、固件签名、安全调试、安全升级等多项安全措
+施，保证产品安全特性。 适用于用于智能家电、智能家居、智能玩具、无线音视频、工业控制、医疗监护
+等广泛的物联网领域
 
-W800 SDK 是集 RTOS 内核，硬件驱动， Wi-Fi 协议栈，蓝牙协议栈， TCP/IP 协议栈，网络应
-指令集，多种应用层协议以及相应的示例代码于一体的嵌入式 Wi-Fi、蓝牙应用开发平台。
-它提供的功能有：
-无线
-⚫ 支持 IEEE802.11b/g/n 无线标准
-⚫ 支持 BT 4.2
-⚫ 支持频率范围： 2.412~2.484 GHz
-⚫ 支持基础网（Infra）
-➢ 支持多种加密和认证机制： OPEN/WEP64/WEP128/TKIP/CCMP/WPA-PSK/WPA2-P
-➢ 支持快速联网模式（指定信道与 BSSID）
-➢ 支持无线漫游
-➢ 支持 PS-POLL 节能模式
-➢ 支持 WPS 功能
-⚫ 支持软 AP
-➢ 支持 OPEN、 WEP、 TKIP、 AES 加密认证
-➢ 最多支持 8 个 station 连接
-➢ 支持 STA 的 PS-POLL 节能
-⚫ 支持软 APSTA
-➢ 支持 2 级级联
-➢ 最多支持 8 个 station 连接
-驱动
-⚫ 支持 SPI、 UART 接口通信
-➢ 支持高速 SPI 数据从接口，接口最大速率 20Mbps
-➢ 支持 UART 数据接口，接口最大速率 2Mbps
-⚫ 支持用户可编程的 GPIO 控制
-⚫ 支持 I2S 接口
-⚫ 支持 I2C 接口，最大速率 400Kbps ⚫ 支持 7816 接口
-⚫ 支持硬件加解密
-⚫ 支持外挂 SPI-FLASH
-⚫ 支持内置 FLASH
-⚫ 支持 ADC 接口
-⚫ 支持 PWM 接口
-联网
-⚫ 支持不同配网方式
-➢ ONESHOT
-➢ WPS
-➢ WEB 页面
-➢ AIRKISS
-➢ 蓝牙
-⚫ 支持 API 方式联网（针对二次开发者）
-⚫ 支持 AT 指令方式联网（针对 AT 指令开发者）
-TCP/IP 协议
-⚫ 支持多种网络协议： TCP/UDP/ICMP/DHCP/DNS
-⚫ 支持 DHCP Server、 DNS Server
-⚫ 支持 HTTP Client、 HTTP Server 功能
-⚫ 支持 IPERF
-其它
-⚫ 支持 AT 指令集
-⚫ 支持标准 socket 接口
-⚫ 支持 m-DNS
-⚫ 支持 web socket
-⚫ 支持 SSL Server、 SSL Client
-⚫ 支持 OS 替换
-⚫ 支持云移植
-⚫ 支持基于串口方式的模块生产测试  
+
 
 ![img](https://www.w600.fun/docs/zh/.assets/app/ide/block.png)
 
