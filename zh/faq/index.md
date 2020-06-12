@@ -155,7 +155,7 @@ AT方法：
 
 内置 Flash 总容量为 2M Bytes，具体分配方式如下
 
-<img src="C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200611151213987.png" alt="image-20200611151213987" style="zoom:80%;" /> 
+<img src="../.assets/faq/w800 flash.png" alt="image-20200611151213987" style="zoom:80%;" /> 
 
 ### 为什么布局划分总是以 64KB 为倍数划分？
 
