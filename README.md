@@ -1,2 +1,3 @@
 # W800
-ThingsTurn‘s product maintenance about W800
+ThingsTurn release to W800 product
+provid W800 Subsequent updates
