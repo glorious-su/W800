@@ -212,7 +212,7 @@ I2C、 I2S、 7816 等数字接口；支持多种硬件加解密算法，内置 
 
 TB-08 是一款基于联盛德 W800 的超小体积核心开发板，该开发板引出了芯片的所有IO，并且内置LDO和UART传输芯片，只需一根 Micro USB 数据线与电脑连接即可使用，支持一键下载，外设拥有5个环形LED和2颗按键，调试操作极其方便。
 
-![image-20200610165430926](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610165430926.png)
+![TB_08](../.assets/app/ide/TB_08)
 
 ## **4 开发环境搭建**
 
@@ -221,55 +221,55 @@ TB-08 是一款基于联盛德 W800 的超小体积核心开发板，该开发�
 在官网 https://occ.t-head.cn 平头哥芯片开放社区-技术部落-资源下载中可以找到 CDS 集成
 开发环境下载链接，下载 CDS 安装包之后，双击压缩包中的 setup.exe 即可启动安装。
 
-![image-20200610115630319](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610115630319.png)   
+![image-20200610115630319](../.assets/app/ide/setup)   
 
 安装中需要用户输入一些信息，根据界面提示输入即可：  
 
-![image-20200610115736348](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610115736348.png) ![image-20200610115751359](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610115751359.png)
+![image-20200610115736348](../.assets/app/ide/install) ![image-20200610115751359](../.assets/app/ide/install_1)
 
-![image-20200610115848644](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610115848644.png) 
+![image-20200610115848644](../.assets/app/ide/install_2) 
 
 最后，点击 next 启动安装：  
 
-![image-20200610115923047](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610115923047.png) 
+![image-20200610115923047](../.assets/app/ide/install_3) 
 
-![image-20200610115934125](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610115934125.png) 
+![image-20200610115934125](../.assets/app/ide/install_4) 
 
 ### 4.2 导入工程
 
 双击图标启动后将工程操作导入到 CDS 中：  
 
-![image-20200610134142709](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610134142709.png)
+![image-20200610134142709](../.assets/app/ide/importcds)
 
-![image-20200610134202292](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610134202292.png) 
+![image-20200610134202292](../.assets/app/ide/importcds2) 
 
-![image-20200610134212414](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610134212414.png) 
+![image-20200610134212414](../.assets/app/ide/importcds3) 
 
-![image-20200610134225573](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610134225573.png)
+![image-20200610134225573](../.assets/app/ide/importcds4)
 
 完成之后，导入的工程出现在工程管理视图中，如下图所示。  
 
-![image-20200610134323879](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610134323879.png)
+![image-20200610134323879](../.assets/app/ide/importcds5)
 
 ## 5 编译 SDK
 
 导入 SDK 工程之后，在左侧工程管理视图中右键单击工程，选择 Build Project 开始编译：  
 
-![image-20200610134449714](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610134449714.png)
+![image-20200610134449714](../.assets/app/ide/compile)
 
 在 CDS 的 Console 窗口会输出编译信息，如果有错误也会在 Problems 中显示，可以根据提示自行修改。  
 
-![image-20200610135056872](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135056872.png) 
+![image-20200610135056872](../.assets/app/ide/compile1) 
 
 ## 6 下载固件
 
 W800 可以使用多种方式下载固件，这里仅以集成 wm_tool 工具下载举例。
 首先右键工程依次选择“Make Targets” → “Create…”：  
 
-![image-20200610135215059](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135215059.png) 
+![image-20200610135215059](../.assets/app/ide/fw_dowload1) 
 
 在弹出的对话框中按照下图进行设置：  
-![image-20200610135246899](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135246899.png)
+![image-20200610135246899](../.assets/app/ide/fw_dowload2)
 
 “Target name”输入“download”；
 “Make Target”输入“download DL_PORT=串口号”，如 COM18；
@@ -277,23 +277,23 @@ W800 可以使用多种方式下载固件，这里仅以集成 wm_tool 工具下
 这几条配置，除了串口号用户按需修改之外，其余建议用户直接复制粘贴，填完点击 OK 按钮。
 然后右键工程依次选择“Make Targets” → “Build…”：  
 
-![image-20200610135346783](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135346783.png) 
+![image-20200610135346783](../.assets/app/ide/fw_dowload3) 
 
 在弹出的对话框中选中刚才配好的“download”项目，点击“Edit…”按钮：  
 
-![image-20200610135423572](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135423572.png) 
+![image-20200610135423572](../.assets/app/ide/fw_dowload4) 
 
 这时弹出对话框如下图：  
 
-![image-20200610135442155](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135442155.png) 
+![image-20200610135442155](../.assets/app/ide/fw_dowload6) 
 
 直接点击 OK 按钮返回即可。  
 
-![image-20200610135501021](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135501021.png) 
+![image-20200610135501021](../.assets/app/ide/fw_dowload7) 
 
 此时，选中刚才配好的“download”项目，点击“Build”按钮即可开始下载固件：  
 
-![image-20200610135617244](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610135617244.png) 
+![image-20200610135617244](../.assets/app/ide/fw_dowload8) 
 
 下载过程中，有可能需要用户手动复位开发板，请按照 Console 窗口中的提示信息操作即可。至此，固件的编译和烧录已经成功  
 
@@ -306,31 +306,31 @@ Server 下载链接，下载 Debug Server 安装包之后， Windows 系统下�
 即可启动安装， Linux 系统下执行压缩包中的安装脚本即可启动安装。
 注意： Windows 系统下安装 CDS 集成开发环境的话是可选安装 Debug Server 的。（安装CSD时选择了debug sever可跳过此安装环节）  
 
-![image-20200610163251916](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163251916.png)
+![image-20200610163251916](../.assets/app/ide/debug)
 
 安装中需要用户输入一些信息，根据界面提示输入即可：  
 
-![image-20200610163326299](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163326299.png)
+![debug](../.assets/app/ide/debug1)
 
-![image-20200610163335861](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163335861.png)
+![image-20200610163335861](../.assets/app/ide/debug3)
 
-![image-20200610163341632](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163341632.png)
+![image-20200610163341632](../.assets/app/ide/debug4)
 
 最后，点击 next 启动安装：  
 
-![image-20200610163419216](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163419216.png)
+![image-20200610163419216](../.assets/app/ide/debug5)
 
 然后请耐心等待安装完成。  
 
-![image-20200610163434350](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163434350.png)
+![image-20200610163434350](../.assets/app/ide/debug6)
 
-![image-20200610163443818](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163443818.png)
+![image-20200610163443818](../.assets/app/ide/debug7)
 
 ### 7.2 连接 CK-LINK
 
 先使用杜邦线连接CK-LINK和W800模块，其连接方式如下图：  
 
-![image-20200610163533672](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163533672.png)![image-20200610163907590](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610163907590.png)
+![image-20200610163533672](../.assets/app/ide/CK-LINK.png)![image-20200610163907590](../.assets/app/ide/driver.png)
 
 打开上述路径打开软件安装位置，双击安装驱动
 
@@ -346,7 +346,7 @@ Server 下载链接，下载 Debug Server 安装包之后， Windows 系统下�
 
 5  s双击桌面图标启动之后，界面会如下显示：
 
-![image-20200610164111624](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610164111624.png)  
+![image-20200610164111624](../.assets/app/ide/start.png)  
 
 第一行会显示 CK-LINK 的版本等信息，如果驱动未安装成功这行信息不会出现；
 后面几行显示了 CPU 等芯片信息，如果接线不正确这些信息也不会显示。
@@ -357,19 +357,19 @@ Server 下载链接，下载 Debug Server 安装包之后， Windows 系统下�
 6.1 配置工程
 导入 SDK 工程之后，在左侧工程管理视图中右键单击工程，如下图选择设置：  
 
-![image-20200610164337845](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610164337845.png)
+![image-20200610164337845](../.assets/app/ide/cds debug.png)
 
-![image-20200610164344957](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610164344957.png)
+![image-20200610164344957](../.assets/app/ide/cds debug2.png)
 
 6.2 启动调试  
 
 右键工程选择如下：  
 
-![image-20200610164411648](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610164411648.png)
+![image-20200610164411648](../.assets/app/ide/cds debug3.png)
 
 之后根据界面提示操作即可。  
 
-![image-20200610164427410](C:\Users\Y\AppData\Roaming\Typora\typora-user-images\image-20200610164427410.png)
+![image-20200610164427410](../.assets/app/ide/cds debug4.png)
 
 ## 8 结束
 
