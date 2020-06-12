@@ -246,7 +246,7 @@ TCP/IP 协议
 
 **·** **电脑**: 开发环境支持CDS 集成开发环境  
 
-**·** **SDK**: ~~[W800 最新SDK](https://github.com/w600/sdk)~~
+**·** **SDK**: [W800 最新SDK](https://github.com/glorious-su/W800/tree/master/zh)
 
 **·** CDS工具链:Simple版本集成ELF工具链 
 
