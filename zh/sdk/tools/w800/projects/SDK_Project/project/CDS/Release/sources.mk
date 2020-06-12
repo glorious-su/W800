@@ -1,0 +1,89 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+O_SRCS := 
+C_SRCS := 
+S_SRCS := 
+S_UPPER_SRCS := 
+OBJ_SRCS := 
+ASM_SRCS := 
+BIN_SRCS := 
+OBJS := 
+C_DEPS := 
+ASM_DEPS := 
+S_DEPS := 
+S_UPPER_DEPS := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+src/os/rtos \
+src/os/rtos/source \
+src/os/rtos/ports/xt804 \
+src/network/lwip2.0.3 \
+src/network/lwip2.0.3/netif \
+src/network/lwip2.0.3/core \
+src/network/lwip2.0.3/core/ipv6 \
+src/network/lwip2.0.3/core/ipv4 \
+src/network/lwip2.0.3/api \
+src/network/api2.0.3 \
+src \
+src/app/wm_atcmd \
+src/app/web \
+src/app/sslserver \
+src/app/ping \
+src/app/ota \
+src/app/oneshotconfig \
+src/app/ntp \
+src/app/mqtt \
+src/app/mbedtls/ports \
+src/app/mbedtls/library \
+src/app/matrixssl \
+src/app/matrixssl/core \
+src/app/mDNS/mDNSPosix \
+src/app/mDNS/mDNSCore \
+src/app/libwebsockets-2.1-stable \
+src/app/library \
+src/app/iperf \
+src/app/httpclient \
+src/app/dnsserver \
+src/app/dhcpserver \
+src/app/cJSON \
+platform/sys \
+platform/drivers/watchdog \
+platform/drivers/uart \
+platform/drivers/timer \
+platform/drivers/spi \
+platform/drivers/sasc \
+platform/drivers/rtc \
+platform/drivers/pwm \
+platform/drivers/pmu \
+platform/drivers/irq \
+platform/drivers/io \
+platform/drivers/internalflash \
+platform/drivers/i2s \
+platform/drivers/i2c \
+platform/drivers/gpio \
+platform/drivers/flash \
+platform/drivers/efuse \
+platform/drivers/dma \
+platform/drivers/cpu \
+platform/drivers/adc \
+platform/drivers/7816 \
+platform/common/utils \
+platform/common/task \
+platform/common/params \
+platform/common/mem \
+platform/common/fwup \
+platform/common/crypto \
+platform/common/crypto/symmetric \
+platform/common/crypto/pubkey \
+platform/common/crypto/prng \
+platform/common/crypto/math \
+platform/common/crypto/keyformat \
+platform/common/crypto/digest \
+platform/arch/xt804/minilibc \
+platform/arch/xt804/bsp \
+demo \
+demo/console \
+
