@@ -1,6 +1,6 @@
 # 联盛德 AT 指令
 
-本文旨在引导客户使用W600系列产品编译和下载调试联盛德版本的AT固件，其中包括硬件环境，软件环境，下载固件，调制等步骤。
+本文旨在引导客户使用W800系列产品编译和下载调试联盛德版本的AT固件，其中包括硬件环境，软件环境，下载固件，调制等步骤。
 
 ## 介绍
 
@@ -10,8 +10,8 @@
 
 - 电脑：固件下载当前仅支持Windows操作系统
 - 软件：[串口调试助手](https://download.w600.fun/tool/%E6%98%9F%E9%80%9A%E6%99%BA%E8%81%94%E4%B8%B2%E5%8F%A3%E8%B0%83%E8%AF%95%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.7z)
-- 固件：[联盛德AT固件](https://download.w600.fun/firmware/at.fls)
-- 硬件：TB-01开发板 或 W600系列模组，开发板（[购买链接](http://shop.thingsturn.com)）
+- 固件：[联盛德AT固件](https://github.com/glorious-su/W800/tree/master/zh/sdk/bin/w800)
+- 硬件：TB-08开发板 或 W800系列模组，开发板（[购买链接](http://shop.thingsturn.com)）
 - Micro USB线
 - 文档：[WM_AT指令集手册](https://download.w600.fun/document/W60X_SDK_AT%E6%8C%87%E4%BB%A4%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.pdf)
 

@@ -27,9 +27,9 @@
 
 **注意：**
 
-  - WM\_W600.FLS不支持OTA升级，云端上放的升级固件不能放WM\_W600.FLS
-  - 做OTA升级建议使用WM\_W600\_GZ.img，该文件是压缩格式，相对传输的数据比较小
-  - Secboot升级时建议下载WM\_W600\_GZ.img文件，WM\_W600\_SEC.img文件太大可能会破坏用户区数据
+  - WM\_W800.FLS不支持OTA升级，云端上放的升级固件不能放WM\_W800.FLS
+  - 做OTA升级建议使用WM\_W800\_GZ.img，该文件是压缩格式，相对传输的数据比较小
+  - Secboot升级时建议下载WM\_W800\_GZ.img文件，WM\_W800\_SEC.img文件太大可能会破坏用户区数据
 
 本地串口升级分为两种**： ROM升级、SECBOOT升级。
 
@@ -46,7 +46,7 @@
 
 ## 3.星通智联下载调试软件界面展示
 
-![image](../.assets/app/download/picture.png)
+![](../.assets/app/download/picture.png)
 
 ------
 
@@ -54,22 +54,23 @@
 
 **ROM升级 -通过FLS文件升级**
 
-![image](../.assets/app/download/fls.png)
+![](../.assets/app/download/fls.png)
 
 **Secboot升级-通过img文件升级**
 
-![image](../.assets/app/download/img.png)
+![](../.assets/app/download/img.png)
 
 **擦除fls文件操作**
 
-![image](../.assets/app/download/earse.png)
+![](../.assets/app/download/earse.png)
 
 ------
 
 ## 5.FAQ
 
 **1.如何进入ROM模式烧录fls文件**
-  - 拉低W600模块的BOOTMODE(PA0)脚，然后上电（注意模组一般没有引出该引脚，使用芯片设置产品的用户可以考虑引出该引脚）；
+
+  - 拉低W800模块的BOOTMODE(PA0)脚，然后上电（注意模组一般没有引出该引脚，使用芯片设置产品的用户可以考虑引出该引脚）；
   - 使用 星通智联串口下载调试软件 的擦除功能，擦除flash后，默认上电就会进入ROM模式。
 
 **2.在不知道如何烧录固件的情况下的万能烧录方式**
@@ -78,7 +79,7 @@
   - 烧录fls文件。
 
 **3.烧录过程中卡住不动**
-  - W600芯片烧录过程中需要手动的重启设备。使用星通智联串口下载调试软件下载时，文本窗口会提示 "reset device" ,此时需要手动的重启设备。
+  - W800芯片烧录过程中需要手动的重启设备。使用星通智联串口下载调试软件下载时，文本窗口会提示 "reset device" ,此时需要手动的重启设备。
 
 **4.如何设置一键下载**
   - 接线电路时，将模组的复位脚接在串口工具的RTS引脚上，下载的时候可以自动复位。
